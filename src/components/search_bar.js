@@ -5,17 +5,17 @@ class SearchBar extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { term: '' };
+        this.state = {};
     }
 
     render() {
         return (
             <div>
-                <input 
-                value={this.state.term}
-                onChange={evt => this.setState({ term: evt.target.value })} 
-                placeholder='Search' 
-                className='search-input' />
+                <input
+                    value={this.state.term}
+                    onChange={evt => this.setState({ term: evt.target.value })}
+                    placeholder='Search'
+                    className='col-md-8 search-input' />
             </div>
         );
     }
